@@ -1,0 +1,14 @@
+C:\Moje projekty\Hokus\Hokus\bin\Debug\net10.0\Hokus.exe
+C:\Moje projekty\Hokus\Hokus\bin\Debug\net10.0\Hokus.deps.json
+C:\Moje projekty\Hokus\Hokus\bin\Debug\net10.0\Hokus.runtimeconfig.json
+C:\Moje projekty\Hokus\Hokus\bin\Debug\net10.0\Hokus.dll
+C:\Moje projekty\Hokus\Hokus\bin\Debug\net10.0\Hokus.pdb
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.AssemblyInfoInputs.cache
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.AssemblyInfo.cs
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.csproj.CoreCompileInputs.cache
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.dll
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\refint\Hokus.dll
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.pdb
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.genruntimeconfig.cache
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\ref\Hokus.dll
