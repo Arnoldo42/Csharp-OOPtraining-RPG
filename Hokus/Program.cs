@@ -99,7 +99,7 @@
                 else if (hrac.Health > 0 && enemy.Health <= 0)
                 {
                     Console.WriteLine("You have won, you are now mighty warrior");
-                    Potion newPotion = new Potion("Heal Potion", 1, 30, hrac);
+                    hrac.AddItem(potion);
                 }
                 else if (hrac.Health <= 0 && enemy.Health <= 0)
                     Console.WriteLine("You have managed a draw with the enemy.");
@@ -453,15 +453,13 @@
 
             public Item FindInInventory()
             {
-                Console.Write("Enter name of what you are looking for: ");
+                Console.WriteLine("Enter name of what you are looking for: ");
                 string lookingFor = Console.ReadLine();
-                foreach (Item i in inventory)
-                {
-                    if (i.Name.ToUpper() == lookingFor.ToUpper())
-                        return i;
-                    
-                }
-                throw new NotFound("The Item was not found");
+                Item found =  inventory.FirstOrDefault(item => item.Name.ToUpper() == lookingFor.ToUpper());
+                
+                if (found == null)
+                    throw new NotFound("The Item was not found");
+                return found;
                 
             }
             
@@ -569,6 +567,12 @@
             }
         }
 
+
+        abstract class Equipment : Item
+        {
+            abstract public 
+            
+        }
         abstract class Armor : Item
             {
                 public bool equiped;
@@ -660,20 +664,35 @@
                     }
                     else
                     {
-                        foreach (Item i in hrac.inventory)
-                        {
-                            if (i is Weapon w && w.equiped)
-                            {
-                                hrac.Attack -= w.Attack;
-                                Console.WriteLine($"{w.Name} bylo sundano");
-                                w.equiped = false;
-                                break;
-                            }
-                        }
+                        Weapon foundWeapon = hrac.inventory.OfType<Weapon>().FirstOrDefault(w => w.equiped);
 
-                        hrac.Attack += Attack;
-                        Console.WriteLine($"You have equiped {Name}\nYour Attack went up {Attack} to  {hrac.Attack}");
-                        equiped = true;
+                        if (foundWeapon == null)
+                        {
+                            hrac.Attack += Attack;
+                            Console.WriteLine($"You have equiped {Name}\nYour Attack went up {Attack} to  {hrac.Attack}");
+                            equiped = true;
+                        }
+                        else
+                        {
+                            
+                            hrac.Attack -= foundWeapon.Attack;
+                            Console.WriteLine($"You have equiped {foundWeapon.Name}\nYour Attack went up {Attack} to  {hrac.Attack}");
+                            foundWeapon.equiped = false;
+                            
+                        }
+                            
+                        
+                        // foreach (Item i in hrac.inventory)
+                        // {
+                        //     if (i is Weapon w && w.equiped)
+                        //     {
+                        
+                        //     }
+                        // }
+                        //
+                        // hrac.Attack += Attack;
+                        // Console.WriteLine($"You have equiped {Name}\nYour Attack went up {Attack} to  {hrac.Attack}");
+                        // equiped = true;
 
                     }
 

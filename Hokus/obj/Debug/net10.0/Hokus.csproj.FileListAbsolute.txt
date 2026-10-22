@@ -12,3 +12,4 @@ C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\refint\Hokus.dll
 C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.pdb
 C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.genruntimeconfig.cache
 C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\ref\Hokus.dll
+C:\Moje projekty\Hokus\Hokus\obj\Debug\net10.0\Hokus.sourcelink.json

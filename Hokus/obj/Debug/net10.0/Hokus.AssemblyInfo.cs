@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hokus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84180301fc5e1ef2e548dfc9d5be9fd80950a491")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hokus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hokus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
